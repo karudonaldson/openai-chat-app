@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { View, Text, TextInput, Button, FlatList, StyleSheet } from "react-native";
 import axios from "axios";
 
-// Update this with your WSL IP (172.31.174.126)
+// Replace this with your actual backend IP and port
 const API_BASE_URL = "http://172.31.174.126:5000";  
 
 const ChatScreen = () => {
@@ -13,7 +13,7 @@ const ChatScreen = () => {
     if (!input.trim()) return;
 
     const newMessage = { text: input, sender: "user" };
-    setMessages([...messages, newMessage]); // Update UI instantly
+    setMessages([...messages, newMessage]);
 
     try {
       const response = await axios.post(`${API_BASE_URL}/api/chat`, { message: input });
@@ -22,7 +22,7 @@ const ChatScreen = () => {
     } catch (error) {
       console.error("Error sending message:", error);
     }
-    setInput(""); // Clear input field
+    setInput("");
   };
 
   return (
@@ -54,5 +54,5 @@ const styles = StyleSheet.create({
   botText: { alignSelf: "flex-start", padding: 10, backgroundColor: "#EAEAEA", marginVertical: 5 },
 });
 
+// ✅ Ensure the component is exported as default
 export default ChatScreen;
-s
