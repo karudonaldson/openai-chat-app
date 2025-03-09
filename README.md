@@ -1,6 +1,4 @@
-# could you rewrite this readme guide for the mobile app.  Perhaps mention some of the key takeaways, and future features intended discussed to refresh our memories too please?
-
-A simple mobile app to review and approve content from past ChatGPT conversations 👋
+# A simple mobile app to review and approve content from past ChatGPT conversations 👋
 
 Build on [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
@@ -37,3 +35,7 @@ In the output, you'll find options to open the app in a
 3. No more cleaning out your OpenAI memory :)
 
 ## Future Improvements
+
+
+
+-
